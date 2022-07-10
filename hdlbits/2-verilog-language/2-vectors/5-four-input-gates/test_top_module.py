@@ -5,6 +5,9 @@ from cocotb.triggers import FallingEdge
 
 import random
 
+def rand(bits):
+    return random.randint(0, 2**bits - 1)
+
 def o_and(i):
     return ((i >> 0) & (i >> 1) & (i >> 2) & (i >> 3)) & 0b1
 
@@ -17,7 +20,7 @@ def o_xor(i):
 @cocotb.test()
 async def test(dut):
     for i in range(10):
-        i = random.randint(0, 2**4 - 1)
+        i = rand(4)
         dut.i.value = i
 
         await Timer(2, units="ns")

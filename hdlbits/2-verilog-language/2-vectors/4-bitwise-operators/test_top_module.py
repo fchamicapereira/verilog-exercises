@@ -5,6 +5,9 @@ from cocotb.triggers import FallingEdge
 
 import random
 
+def rand(bits):
+    return random.randint(0, 2**bits - 1)
+
 def out_or_bitwise(a,b):
     return a | b
 
@@ -17,8 +20,8 @@ def out_not(a,b):
 @cocotb.test()
 async def test(dut):
     for i in range(10):
-        a = random.randint(0, 2**3 - 1)
-        b = random.randint(0, 2**3 - 1)
+        a = rand(3)
+        b = rand(3)
 
         dut.a.value = a
         dut.b.value = b

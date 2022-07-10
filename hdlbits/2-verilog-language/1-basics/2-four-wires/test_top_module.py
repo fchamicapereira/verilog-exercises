@@ -5,12 +5,15 @@ from cocotb.triggers import FallingEdge
 
 import random
 
+def rand(bits):
+    return random.randint(0, 2**bits - 1)
+
 @cocotb.test()
 async def test(dut):
     for i in range(10):
-        a = random.randint(0, 1)
-        b = random.randint(0, 1)
-        c = random.randint(0, 1)
+        a = rand(1)
+        b = rand(1)
+        c = rand(1)
 
         dut.a.value = a
         dut.b.value = b

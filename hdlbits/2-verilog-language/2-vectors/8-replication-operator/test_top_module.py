@@ -8,12 +8,16 @@ import random
 def rand(bits):
     return random.randint(0, 2**bits - 1)
 
+def sign_extend(i):
+    _8bit = bin(i)[2:].zfill(8)
+    _32bit = _8bit[0] * 24 + _8bit
+    return int(_32bit, 2)
+
 @cocotb.test()
 async def test(dut):
     for i in range(10):
-        i = rand(16)
+        i = rand(8)
         dut.i.value = i
 
         await Timer(2, units="ns")
-        assert dut.o_hi.value == (i >> 8) & 0xff and dut.o_lo.value == (i >> 0) & 0xff, \
-            f"randomized test failed with i={bin(dut.i.value)}, o_hi={bin(dut.o_hi.value)}, o_lo={dut.o_lo.value}"
+        assert dut.o.value == sign_extend(i), f"test failed with i={dut.i.value},o={dut.o.value}"

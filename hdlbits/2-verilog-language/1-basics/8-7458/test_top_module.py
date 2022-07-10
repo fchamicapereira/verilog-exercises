@@ -5,6 +5,9 @@ from cocotb.triggers import FallingEdge
 
 import random
 
+def rand(bits):
+    return random.randint(0, 2**bits - 1)
+
 def p1y(a,b,c,d,e,f):
     return (a & b & c) | (d & e & f)
 
@@ -14,17 +17,17 @@ def p2y(a,b,c,d):
 @cocotb.test()
 async def test(dut):
     for i in range(10):
-        p1a = random.randint(0, 1)
-        p1b = random.randint(0, 1)
-        p1c = random.randint(0, 1)
-        p1d = random.randint(0, 1)
-        p1e = random.randint(0, 1)
-        p1f = random.randint(0, 1)
+        p1a = rand(1)
+        p1b = rand(1)
+        p1c = rand(1)
+        p1d = rand(1)
+        p1e = rand(1)
+        p1f = rand(1)
 
-        p2a = random.randint(0, 1)
-        p2b = random.randint(0, 1)
-        p2c = random.randint(0, 1)
-        p2d = random.randint(0, 1)
+        p2a = rand(1)
+        p2b = rand(1)
+        p2c = rand(1)
+        p2d = rand(1)
 
         dut.p1a.value = p1a
         dut.p1b.value = p1b

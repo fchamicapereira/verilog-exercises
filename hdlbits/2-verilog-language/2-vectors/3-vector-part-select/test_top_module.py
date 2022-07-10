@@ -5,6 +5,9 @@ from cocotb.triggers import FallingEdge
 
 import random
 
+def rand(bits):
+    return random.randint(0, 2**bits - 1)
+
 def swap_endianness(d):
     return (d >> 24) & 0xff | \
         ((d >> 16) & 0xff) << 8 | \
@@ -14,7 +17,7 @@ def swap_endianness(d):
 @cocotb.test()
 async def test(dut):
     for i in range(10):
-        i = random.randint(0, 2**32 - 1)
+        i = rand(32)
         dut.i.value = i
 
         await Timer(2, units="ns")

@@ -5,10 +5,13 @@ from cocotb.triggers import FallingEdge
 
 import random
 
+def rand(bits):
+    return random.randint(0, 2**bits - 1)
+
 @cocotb.test()
 async def test(dut):
     for i in range(10):
-        vec = random.randint(0, 2**3 - 1)
+        vec = rand(3)
         dut.vec.value = vec
 
         await Timer(2, units="ns")

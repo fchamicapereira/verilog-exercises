@@ -2,21 +2,10 @@ import cocotb
 from cocotb.clock import Clock
 from cocotb.triggers import FallingEdge, RisingEdge, Timer
 
-# @cocotb.test()
-# async def dff_simple_test(dut):
-#     """Test that d propagates to q"""
+import random
 
-#     clock = Clock(dut.clk, 10, units="us")
-#     cocotb.start_soon(clock.start())
-
-#     # Synchronize with the clock
-#     await FallingEdge(dut.clk)
-
-#     for i in range(10):
-#         d = rand(1)
-#         dut.d.value = d
-#         await FallingEdge(dut.clk)
-#         assert dut.q.value == d, f"output q was incorrect on the {i}th cycle"
+def rand(bits):
+    return random.randint(0, 2**bits - 1)
 
 @cocotb.test()
 async def test(dut):

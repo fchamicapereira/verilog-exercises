@@ -23,7 +23,7 @@ async def test(dut):
     assert dut.q.value == 0, f"FAILED init: i={i}, j={j}, prev={prev_d}, sel={dut.sel.value} d={dut.d.value}, q={dut.q.value}"
 
     prev_d = 0
-    for i in range(10):
+    for i in range(100):
         for sel in range(4):
             d = rand(8)
 

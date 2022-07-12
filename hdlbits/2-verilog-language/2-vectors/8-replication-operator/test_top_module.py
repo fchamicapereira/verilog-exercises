@@ -15,7 +15,7 @@ def sign_extend(i):
 
 @cocotb.test()
 async def test(dut):
-    for i in range(10):
+    for i in range(100):
         i = rand(8)
         dut.i.value = i
 

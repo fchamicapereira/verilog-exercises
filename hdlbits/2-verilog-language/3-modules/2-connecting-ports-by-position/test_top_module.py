@@ -16,7 +16,7 @@ def mod_a_o2(in1,in2,in3,in4):
 
 @cocotb.test()
 async def test(dut):
-    for i in range(10):
+    for i in range(100):
         in1 = rand(1)
         in2 = rand(1)
         in3 = rand(1)

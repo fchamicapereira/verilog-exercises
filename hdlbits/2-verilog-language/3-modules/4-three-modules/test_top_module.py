@@ -21,7 +21,7 @@ async def test(dut):
     await FallingEdge(dut.clk)
 
     prev_d = 0
-    for i in range(10):
+    for i in range(100):
         await FallingEdge(dut.clk)
 
         d = 1 if prev_d == 0 else 0

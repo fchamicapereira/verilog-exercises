@@ -16,7 +16,7 @@ def p2y(a,b,c,d):
 
 @cocotb.test()
 async def test(dut):
-    for i in range(10):
+    for i in range(100):
         p1a = rand(1)
         p1b = rand(1)
         p1c = rand(1)

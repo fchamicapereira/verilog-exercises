@@ -15,9 +15,10 @@ module top_module(
 
   initial
   begin
-    $dumpfile ("top_module.vcd");
+    $dumpfile ("waveform.vcd");
     $dumpvars (0, top_module);
     #1;
   end
 `endif
+
 endmodule

@@ -3,3 +3,6 @@ __pycache__
 sim_build
 results.xml
 *.vcd
+transcript
+*.wlf
+modelsim.ini

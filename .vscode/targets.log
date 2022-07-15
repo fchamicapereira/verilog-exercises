@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul  8 17:29:43 2022
+# Make data base, printed on Fri Jul 15 11:21:39 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-0b98ecba-e1ba-4085-acf3-6db55554112f.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b2fde6e1-ce4a-467a-93af-6ac56bbba43f.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
@@ -67,6 +67,8 @@ MAKEFLAGS = pqrR
 # makefile
 CURDIR := /home/fcp/Documents/verilog-exercises
 # environment
+LM_LICENSE_FILE = 5281@altera-lic.ece.cmu.edu:/home/fcp/Documents/modelsim/license.dat
+# environment
 VSCODE_PIPE_LOGGING = true
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
@@ -93,7 +95,7 @@ ZSH = /home/fcp/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 224521
+VSCODE_PID = 662464
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -129,7 +131,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/fcp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/fcp/Documents/modelsim/modelsim-se_2020.1/modeltech/linux_x86_64:/home/fcp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # default
 MAKEFILES := 
 # automatic
@@ -181,7 +183,7 @@ MAKE_VERSION := 4.3
 # environment
 MANAGERPID = 2073
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 224521
+GIO_LAUNCHED_DESKTOP_FILE_PID = 662464
 # environment
 PAGER = less
 # environment
@@ -217,7 +219,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = pop
 # variable set hash-table stats:
-# Load=103/1024=10%, Rehash=0, Collisions=5/130=4%
+# Load=104/1024=10%, Rehash=0, Collisions=5/131=4%
 
 # Pattern-specific Variable Values
 
@@ -225,9 +227,9 @@ GDMSESSION = pop
 
 # Directories
 
-# . (device 64769, inode 26746409): 8 files, no impossibilities.
+# . (device 64769, inode 26746409): 9 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -277,15 +279,15 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 154 B / avg = 9 B
-# current buf: size = 8162 B / used = 154 B / count = 16 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 162 B / avg = 9 B
+# current buf: size = 8162 B / used = 162 B / count = 17 / avg = 9 B
 
-# strcache performance: lookups = 19 / hit rate = 15%
-# hash-table stats:
+# strcache performance: lookups = 20 / hit rate = 15%
  
 make: *** No rule to make target 'all'.  Stop.
 
-# Load=16/8192=0%, Rehash=0, Collisions=0/19=0%
-# Finished Make data base on Fri Jul  8 17:29:43 2022
+# hash-table stats:
+# Load=17/8192=0%, Rehash=0, Collisions=0/20=0%
+# Finished Make data base on Fri Jul 15 11:21:39 2022
 
  

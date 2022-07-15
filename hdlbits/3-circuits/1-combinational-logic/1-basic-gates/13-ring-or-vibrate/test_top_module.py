@@ -10,7 +10,7 @@ def rand(bits):
 
 @cocotb.test()
 async def test(dut):
-    for ring in range(1):
+    for ring in range(2):
         for vibrate_mode in range(2):
             dut.ring.value = ring
             dut.vibrate_mode.value = vibrate_mode

@@ -9,9 +9,9 @@ def rand(bits):
     return random.randint(0, 2**bits - 1)
 
 def km(a,b,c,d):
-    return (~(
-        (a & b  & ~c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d) | (~a & ~b & c & d) | (a & b & c & ~d) | (a & ~b & c & ~d)
-    )) % 2
+    return (
+        (c&d) | (~a&~b&c&~d)
+    ) % 2
     
 @cocotb.test()
 async def test(dut):
@@ -25,4 +25,5 @@ async def test(dut):
                     dut.d.value = d
 
                     await Timer(2, units="ns")
-                    assert dut.out.value == km(a,b,c,d), f"test failed with a={dut.a.value} b={dut.b.value} c={dut.c.value} d={dut.d.value} out={dut.out.value}"
+                    assert dut.out_sop.value == km(a,b,c,d), f"test failed with a={dut.a.value} b={dut.b.value} c={dut.c.value} d={dut.d.value} out_sop={dut.out_sop.value}"
+                    assert dut.out_pos.value == km(a,b,c,d), f"test failed with a={dut.a.value} b={dut.b.value} c={dut.c.value} d={dut.d.value} out_pos={dut.out_pos.value}"

@@ -19,3 +19,6 @@ MODULE = test_top_module
 
 # include cocotb's make rules to take care of the simulator setup
 include $(shell cocotb-config --makefiles)/Makefile.sim
+
+clean::
+	@rm -rf transcript top_module.vcd vsim.wlf modelsim.ini __pycache__ 2> /dev/null

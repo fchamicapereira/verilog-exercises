@@ -15,10 +15,10 @@ def km(a,b,c,d):
     
 @cocotb.test()
 async def test(dut):
-    for a in range(1):
-        for b in range(1):
-            for c in range(1):
-                for d in range(1):
+    for a in range(2):
+        for b in range(2):
+            for c in range(2):
+                for d in range(2):
                     dut.a.value = a
                     dut.b.value = b
                     dut.c.value = c

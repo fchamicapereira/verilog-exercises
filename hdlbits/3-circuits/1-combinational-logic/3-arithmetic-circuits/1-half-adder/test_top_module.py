@@ -10,8 +10,8 @@ def rand(bits):
 
 @cocotb.test()
 async def test(dut):
-    for a in range(1):
-        for b in range(1):
+    for a in range(2):
+        for b in range(2):
             dut.a.value = a
             dut.b.value = b
 

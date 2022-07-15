@@ -12,7 +12,7 @@ def rand(bits):
 async def test(dut):
     for a in range(2**3):
         for b in range(2**3):
-            for cin in range(1):
+            for cin in range(2):
                 dut.a.value = a
                 dut.b.value = b
                 dut.cin.value = cin

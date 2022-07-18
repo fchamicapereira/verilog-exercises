@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jul 16 14:41:37 2022
+# Make data base, printed on Mon Jul 18 09:52:14 2022
 
 # Variables
 
@@ -23,13 +23,15 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-cc1aeaab-84ca-4ac8-8303-64481bf1d113.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a64f53b7-8ee0-44e6-ac03-51026cf68b51.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
 VSCODE_CWD = /home/fcp
 # environment
 WINDOWPATH = 2
+# environment
+LESS_TERMCAP_me = [0m
 # default
 MAKE_COMMAND := make
 # environment
@@ -62,10 +64,14 @@ LANG = C
 XAUTHORITY = /run/user/1000/gdm/Xauthority
 # default
 .LOADED := 
+# environment
+LESS_TERMCAP_md = [1;32m
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # makefile
 MAKEFLAGS = pqrR
+# environment
+LESS_TERMCAP_so = [01;33m
 # makefile
 CURDIR := /home/fcp/Documents/verilog-exercises
 # environment
@@ -76,6 +82,8 @@ VSCODE_PIPE_LOGGING = true
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
+# environment
+LESS_TERMCAP_ue = [0m
 # environment
 MFLAGS = -pqrR
 # environment
@@ -97,13 +105,13 @@ ZSH = /home/fcp/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 23778
+VSCODE_PID = 26488
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/3100,unix/pop-os:/tmp/.ICE-unix/3100
+SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/8860,unix/pop-os:/tmp/.ICE-unix/8860
 # automatic
 *F = $(notdir $*)
 # environment
@@ -120,6 +128,8 @@ MAKE_HOST := x86_64-pc-linux-gnu
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # makefile
 SHELL = /bin/sh
+# environment
+LESS_TERMCAP_us = [1;4;31m
 # default
 MAKECMDGOALS := all
 # environment
@@ -133,13 +143,17 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/fcp/Documents/modelsim/modelsim-se_2020.1/modeltech/linux_x86_64:/home/fcp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/fcp/Documents/modelsim/modelsim-se_2020.1/modeltech/linux_x86_64:/home/fcp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fcp/Documents/hangar/scripts/
+# environment
+LESS_TERMCAP_se = [0m
 # default
 MAKEFILES := 
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = 81961ed41ecf4eba9b75e72ca4c86106
+LESS_TERMCAP_mb = [1;32m
+# environment
+INVOCATION_ID = 9b191de53a464f12a71e8841438fb9ff
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -169,7 +183,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 3129
+SYSTEMD_EXEC_PID = 8882
 # environment
 EDITOR = vim
 # environment
@@ -183,9 +197,9 @@ DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2746
+MANAGERPID = 8612
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 23778
+GIO_LAUNCHED_DESKTOP_FILE_PID = 26488
 # environment
 PAGER = less
 # environment
@@ -195,7 +209,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:45022
+JOURNAL_STREAM = 8:95789
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -221,7 +235,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = pop
 # variable set hash-table stats:
-# Load=104/1024=10%, Rehash=0, Collisions=5/131=4%
+# Load=111/1024=11%, Rehash=0, Collisions=11/138=8%
 
 # Pattern-specific Variable Values
 
@@ -283,11 +297,11 @@ GNUmakefile:
 
 # strcache buffers: 1 (0) / strings = 18 / storage = 172 B / avg = 9 B
 # current buf: size = 8162 B / used = 172 B / count = 18 / avg = 9 B
+ 
 
 # strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
- 
 # Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Sat Jul 16 14:41:37 2022
+# Finished Make data base on Mon Jul 18 09:52:14 2022
 
  

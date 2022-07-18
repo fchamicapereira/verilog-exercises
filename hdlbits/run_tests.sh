@@ -21,6 +21,8 @@ test() {
             echo -e "$result"
             exit 1
         fi
+
+        make clean > /dev/null
     popd > /dev/null
 }
 

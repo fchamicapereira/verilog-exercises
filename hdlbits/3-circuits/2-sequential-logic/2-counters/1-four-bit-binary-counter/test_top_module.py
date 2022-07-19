@@ -13,20 +13,22 @@ async def test(dut):
     clock = Clock(dut.clk, 1, units="ns")
     cocotb.start_soon(clock.start())
 
+    dut.reset.value = 1
     await FallingEdge(dut.clk)
 
-    dut.r.value = 1
+    dut.reset.value = 0
     await FallingEdge(dut.clk)
 
-    dut.r.value = 0
-    await FallingEdge(dut.clk)
+    q = int(dut.q.value)
 
     for _ in range(100):
-        d = rand(1)
-        r = rand(1)
+        reset = rand(1)
+        dut.reset.value = reset
 
-        dut.d.value = d
-        dut.r.value = r
+        if reset:
+            q = 0
+        else:
+            q = (q + 1) % (2**4)
 
-        await FallingEdge(dut.clk)            
-        assert dut.q.value == (0 if r else d), f"test failed with d={dut.d.value} r={dut.r.value} q={dut.q.value}"
+        await FallingEdge(dut.clk)
+        assert dut.q.value == q, f"test failed with reset={dut.reset.value}"

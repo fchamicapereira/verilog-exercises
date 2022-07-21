@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 19 14:38:00 2022
+# Make data base, printed on Thu Jul 21 08:45:20 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d306c263-e5e2-48d8-bd43-7d26d0d6853c.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ff66a965-15f3-4d64-aa90-9d603b42e988.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
@@ -49,7 +49,7 @@ PWD = /home/fcp/Documents/verilog-exercises
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-XDG_DATA_DIRS = /usr/share/pop:/usr/share/gnome:/home/fcp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
+XDG_DATA_DIRS = /usr/share/pop:/usr/share/gnome:/home/fcp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -105,13 +105,13 @@ ZSH = /home/fcp/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 39939
+VSCODE_PID = 11734
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/2533,unix/pop-os:/tmp/.ICE-unix/2533
+SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/3353,unix/pop-os:/tmp/.ICE-unix/3353
 # automatic
 *F = $(notdir $*)
 # environment
@@ -143,7 +143,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/fcp/Documents/modelsim/modelsim-se_2020.1/modeltech/linux_x86_64:/home/fcp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fcp/Documents/hangar/scripts/
+PATH = /home/fcp/Documents/modelsim/modelsim-se_2020.1/modeltech/linux_x86_64:/home/fcp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fcp/Documents/hangar/scripts/
 # environment
 LESS_TERMCAP_se = [0m
 # default
@@ -153,7 +153,7 @@ MAKEFILES :=
 # environment
 LESS_TERMCAP_mb = [1;32m
 # environment
-INVOCATION_ID = 7c223a2614c34f7e93416d80d0c2f161
+INVOCATION_ID = 692f0477896e4ed2a1dda8a8036cd3be
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -183,7 +183,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 2560
+SYSTEMD_EXEC_PID = 3379
 # environment
 EDITOR = vim
 # environment
@@ -197,9 +197,9 @@ DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2289
+MANAGERPID = 2990
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 39939
+GIO_LAUNCHED_DESKTOP_FILE_PID = 11734
 # environment
 PAGER = less
 # environment
@@ -209,7 +209,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:40447
+JOURNAL_STREAM = 8:40423
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -283,6 +283,7 @@ makefile:
 # Not a target:
 GNUmakefile:
 #  Implicit rule search has been done.
+ 
 #  File does not exist.
 #  File has been updated.
 #  Failed to be updated.
@@ -292,7 +293,6 @@ GNUmakefile:
 # VPATH Search Paths
 
 # No 'vpath' search paths.
- 
 
 # No general ('VPATH' variable) search path.
 
@@ -302,6 +302,6 @@ GNUmakefile:
 # strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Tue Jul 19 14:38:00 2022
+# Finished Make data base on Thu Jul 21 08:45:20 2022
 
  

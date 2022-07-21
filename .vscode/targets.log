@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 21 08:45:20 2022
+# Make data base, printed on Thu Jul 21 11:12:12 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ff66a965-15f3-4d64-aa90-9d603b42e988.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e15bf1eb-b616-4770-b7b8-5e268a9792d8.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
@@ -283,7 +283,6 @@ makefile:
 # Not a target:
 GNUmakefile:
 #  Implicit rule search has been done.
- 
 #  File does not exist.
 #  File has been updated.
 #  Failed to be updated.
@@ -295,6 +294,7 @@ GNUmakefile:
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
+ 
 
 # strcache buffers: 1 (0) / strings = 18 / storage = 172 B / avg = 9 B
 # current buf: size = 8162 B / used = 172 B / count = 18 / avg = 9 B
@@ -302,6 +302,6 @@ GNUmakefile:
 # strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Thu Jul 21 08:45:20 2022
+# Finished Make data base on Thu Jul 21 11:12:12 2022
 
  

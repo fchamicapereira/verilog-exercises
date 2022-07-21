@@ -15,12 +15,13 @@ async def test(dut):
 
     dut.j.value = 0
     dut.k.value = 0
+    dut.Q.value = 0
 
     await FallingEdge(dut.clk)
 
     last_q = 0
 
-    for _ in range(100):
+    for _ in range(1000):
         j = rand(1)
         k = rand(1)
         

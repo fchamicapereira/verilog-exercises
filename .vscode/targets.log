@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 21 11:12:12 2022
+# Make data base, printed on Fri Jul 22 16:10:45 2022
 
 # Variables
 
@@ -22,8 +22,6 @@ GNOME_SHELL_SESSION_MODE = pop
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e15bf1eb-b616-4770-b7b8-5e268a9792d8.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
@@ -52,12 +50,10 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 XDG_DATA_DIRS = /usr/share/pop:/usr/share/gnome:/home/fcp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/fcp/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /home/fcp/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
 LANG = C
 # environment
@@ -76,8 +72,6 @@ LESS_TERMCAP_so = [01;33m
 CURDIR := /home/fcp/Documents/verilog-exercises
 # environment
 LM_LICENSE_FILE = 5281@altera-lic.ece.cmu.edu:/home/fcp/Documents/modelsim/license.dat
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
@@ -103,15 +97,13 @@ MAKEFILE_LIST :=
 # environment
 ZSH = /home/fcp/.oh-my-zsh
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 11734
+VSCODE_PID = 19008
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/3353,unix/pop-os:/tmp/.ICE-unix/3353
+SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/3469,unix/pop-os:/tmp/.ICE-unix/3469
 # automatic
 *F = $(notdir $*)
 # environment
@@ -153,9 +145,7 @@ MAKEFILES :=
 # environment
 LESS_TERMCAP_mb = [1;32m
 # environment
-INVOCATION_ID = 692f0477896e4ed2a1dda8a8036cd3be
-# environment
-VSCODE_LOG_NATIVE = false
+INVOCATION_ID = 72e1bee152ca4a85b8aacadd72427ca4
 # environment
 USERNAME = fcp
 # automatic
@@ -183,7 +173,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 3379
+SYSTEMD_EXEC_PID = 3496
 # environment
 EDITOR = vim
 # environment
@@ -197,9 +187,9 @@ DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2990
+MANAGERPID = 3207
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 11734
+GIO_LAUNCHED_DESKTOP_FILE_PID = 19008
 # environment
 PAGER = less
 # environment
@@ -209,7 +199,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:40423
+JOURNAL_STREAM = 8:48466
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -221,7 +211,7 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-a82128ba-1.68.1-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-a82128ba-1.69.2-main.sock
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -235,7 +225,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = pop
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=11/138=8%
+# Load=106/1024=10%, Rehash=0, Collisions=10/133=8%
 
 # Pattern-specific Variable Values
 
@@ -294,14 +284,14 @@ GNUmakefile:
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
- 
 
 # strcache buffers: 1 (0) / strings = 18 / storage = 172 B / avg = 9 B
 # current buf: size = 8162 B / used = 172 B / count = 18 / avg = 9 B
 
 # strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
+ 
 # Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Thu Jul 21 11:12:12 2022
+# Finished Make data base on Fri Jul 22 16:10:45 2022
 
  

@@ -8,14 +8,18 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 22 16:10:45 2022
+# Make data base, printed on Sun Jul 24 15:11:26 2022
 
 # Variables
 
 # environment
+TMUX_PANE = %3
+# environment
 GDK_BACKEND = x11
 # environment
 LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
 # environment
 GNOME_SHELL_SESSION_MODE = pop
 # environment
@@ -25,7 +29,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
 # environment
-VSCODE_CWD = /home/fcp
+VSCODE_CWD = /home/fcp/Documents/kitsune
 # environment
 WINDOWPATH = 2
 # environment
@@ -64,6 +68,8 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 LESS_TERMCAP_md = [1;32m
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# environment
+GNOME_TERMINAL_SERVICE = :1.146
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -97,13 +103,15 @@ MAKEFILE_LIST :=
 # environment
 ZSH = /home/fcp/.oh-my-zsh
 # environment
-VSCODE_PID = 19008
+VSCODE_PID = 124060
 # environment
 XDG_SESSION_TYPE = x11
+# environment
+TMUX = /tmp/tmux-1000/default,95159,0
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/3469,unix/pop-os:/tmp/.ICE-unix/3469
+SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/3355,unix/pop-os:/tmp/.ICE-unix/3355
 # automatic
 *F = $(notdir $*)
 # environment
@@ -129,13 +137,15 @@ XMODIFIERS = @im=ibus
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-SHLVL = 0
+SHLVL = 2
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/05fb8943_863d_4305_a8c7_ae744f87e351
 # environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/fcp/Documents/modelsim/modelsim-se_2020.1/modeltech/linux_x86_64:/home/fcp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fcp/Documents/hangar/scripts/
+PATH = /home/fcp/Documents/modelsim/modelsim-se_2020.1/modeltech/linux_x86_64:/home/fcp/Documents/modelsim/modelsim-se_2020.1/modeltech/linux_x86_64:/home/fcp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fcp/Documents/hangar/scripts/:/home/fcp/Documents/hangar/scripts/
 # environment
 LESS_TERMCAP_se = [0m
 # default
@@ -145,9 +155,11 @@ MAKEFILES :=
 # environment
 LESS_TERMCAP_mb = [1;32m
 # environment
-INVOCATION_ID = 72e1bee152ca4a85b8aacadd72427ca4
+INVOCATION_ID = abcc1eb407844f33848fdf345fdfcfa6
 # environment
 USERNAME = fcp
+# environment
+TERM_PROGRAM = tmux
 # automatic
 ?F = $(notdir $?)
 # environment
@@ -155,7 +167,7 @@ GTK_IM_MODULE = ibus
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # environment
-LS_COLORS = 
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # automatic
 +F = $(notdir $+)
 # environment
@@ -173,7 +185,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 3496
+SYSTEMD_EXEC_PID = 3602
 # environment
 EDITOR = vim
 # environment
@@ -187,19 +199,21 @@ DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 3207
+MANAGERPID = 2963
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 19008
+GIO_LAUNCHED_DESKTOP_FILE_PID = 124060
 # environment
 PAGER = less
 # environment
-_ = /usr/share/code/code
+_ = /usr/bin/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:48466
+COLORTERM = truecolor
+# environment
+JOURNAL_STREAM = 8:38792
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -212,20 +226,30 @@ QT_IM_MODULE = ibus
 ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-a82128ba-1.69.2-main.sock
+# environment
+TERM = screen
 # default
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
 # default
 SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 6800
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
+TERM_PROGRAM_VERSION = 3.2a
+# environment
 GDMSESSION = pop
 # variable set hash-table stats:
-# Load=106/1024=10%, Rehash=0, Collisions=10/133=8%
+# Load=118/1024=12%, Rehash=0, Collisions=17/145=12%
 
 # Pattern-specific Variable Values
 
@@ -267,6 +291,7 @@ all:
 makefile:
 #  Implicit rule search has been done.
 #  File does not exist.
+ 
 #  File has been updated.
 #  Failed to be updated.
 
@@ -290,8 +315,7 @@ GNUmakefile:
 
 # strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
- 
 # Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Fri Jul 22 16:10:45 2022
+# Finished Make data base on Sun Jul 24 15:11:26 2022
 
  

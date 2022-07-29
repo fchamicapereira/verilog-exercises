@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 25 09:04:58 2022
+# Make data base, printed on Fri Jul 29 09:35:53 2022
 
 # Variables
 
@@ -97,13 +97,13 @@ MAKEFILE_LIST :=
 # environment
 ZSH = /home/fcp/.oh-my-zsh
 # environment
-VSCODE_PID = 8388
+VSCODE_PID = 9588
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/3432,unix/pop-os:/tmp/.ICE-unix/3432
+SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/3283,unix/pop-os:/tmp/.ICE-unix/3283
 # automatic
 *F = $(notdir $*)
 # environment
@@ -145,7 +145,7 @@ MAKEFILES :=
 # environment
 LESS_TERMCAP_mb = [1;32m
 # environment
-INVOCATION_ID = 2ad851917a014ff0944e507d7a1eccd6
+INVOCATION_ID = e11df699ed684154b45d6c96cd87bfb9
 # environment
 USERNAME = fcp
 # automatic
@@ -173,7 +173,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 3455
+SYSTEMD_EXEC_PID = 3308
 # environment
 EDITOR = vim
 # environment
@@ -187,9 +187,9 @@ DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 3186
+MANAGERPID = 2884
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 8388
+GIO_LAUNCHED_DESKTOP_FILE_PID = 9588
 # environment
 PAGER = less
 # environment
@@ -199,7 +199,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:40226
+JOURNAL_STREAM = 8:53649
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -290,8 +290,8 @@ GNUmakefile:
 
 # strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
- 
 # Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Mon Jul 25 09:04:58 2022
+# Finished Make data base on Fri Jul 29 09:35:53 2022
+ 
 
  

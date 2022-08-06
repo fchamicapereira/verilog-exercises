@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 29 09:35:53 2022
+# Make data base, printed on Sat Aug  6 10:57:36 2022
 
 # Variables
 
@@ -23,11 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
-# environment
 VSCODE_CWD = /home/fcp
-# environment
-WINDOWPATH = 2
 # environment
 LESS_TERMCAP_me = [0m
 # default
@@ -47,7 +43,7 @@ PWD = /home/fcp/Documents/verilog-exercises
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-XDG_DATA_DIRS = /usr/share/pop:/usr/share/gnome:/home/fcp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+XDG_DATA_DIRS = /home/fcp/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # automatic
@@ -57,7 +53,7 @@ VSCODE_CODE_CACHE_PATH = /home/fcp/.config/Code/CachedData/3b889b090b5ad5793f524
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/gdm/Xauthority
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.7XXGQ1
 # default
 .LOADED := 
 # environment
@@ -85,11 +81,11 @@ SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # default
 .SHELLFLAGS := -c
 # environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-pop:/etc/xdg
+WAYLAND_DISPLAY = wayland-0
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
-XDG_SESSION_DESKTOP = pop
+XDG_SESSION_DESKTOP = pop-wayland
 # makefile
 MAKEFILE_LIST := 
 # automatic
@@ -97,13 +93,13 @@ MAKEFILE_LIST :=
 # environment
 ZSH = /home/fcp/.oh-my-zsh
 # environment
-VSCODE_PID = 9588
+VSCODE_PID = 16470
 # environment
-XDG_SESSION_TYPE = x11
+XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/3283,unix/pop-os:/tmp/.ICE-unix/3283
+SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/3353,unix/pop-os:/tmp/.ICE-unix/3353
 # automatic
 *F = $(notdir $*)
 # environment
@@ -135,7 +131,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/fcp/Documents/modelsim/modelsim-se_2020.1/modeltech/linux_x86_64:/home/fcp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fcp/Documents/hangar/scripts/
+PATH = /home/fcp/Documents/modelsim/modelsim-se_2020.1/modeltech/linux_x86_64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fcp/Documents/hangar/scripts/
 # environment
 LESS_TERMCAP_se = [0m
 # default
@@ -145,13 +141,13 @@ MAKEFILES :=
 # environment
 LESS_TERMCAP_mb = [1;32m
 # environment
-INVOCATION_ID = e11df699ed684154b45d6c96cd87bfb9
+INVOCATION_ID = c2bacd4115e748a2934987bf3632e7fb
 # environment
 USERNAME = fcp
+# environment
+GNOME_SETUP_DISPLAY = :1
 # automatic
 ?F = $(notdir $?)
-# environment
-GTK_IM_MODULE = ibus
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # environment
@@ -161,7 +157,7 @@ LS_COLORS =
 # environment
 LESS = -R
 # environment
-DESKTOP_SESSION = pop
+DESKTOP_SESSION = pop-wayland
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = pop:GNOME
 # 'override' directive
@@ -173,23 +169,21 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 3308
+SYSTEMD_EXEC_PID = 3371
 # environment
 EDITOR = vim
 # environment
-DISPLAY = :1
+DISPLAY = :0
 # environment
 USER = fcp
 # environment
 GTK_MODULES = gail:atk-bridge:appmenu-gtk-module
-# environment
-DEFAULTS_PATH = /usr/share/gconf/pop.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2884
+MANAGERPID = 3220
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 9588
+GIO_LAUNCHED_DESKTOP_FILE_PID = 16470
 # environment
 PAGER = less
 # environment
@@ -197,9 +191,7 @@ _ = /usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
-# environment
-JOURNAL_STREAM = 8:53649
+JOURNAL_STREAM = 8:50710
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -223,9 +215,9 @@ SUFFIXES :=
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
-GDMSESSION = pop
+GDMSESSION = pop-wayland
 # variable set hash-table stats:
-# Load=106/1024=10%, Rehash=0, Collisions=10/133=8%
+# Load=102/1024=10%, Rehash=0, Collisions=9/129=7%
 
 # Pattern-specific Variable Values
 
@@ -291,7 +283,6 @@ GNUmakefile:
 # strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Fri Jul 29 09:35:53 2022
- 
+# Finished Make data base on Sat Aug  6 10:57:36 2022
 
  

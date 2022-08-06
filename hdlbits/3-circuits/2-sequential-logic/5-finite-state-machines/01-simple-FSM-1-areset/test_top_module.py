@@ -4,6 +4,7 @@ from cocotb.triggers import Timer
 from cocotb.triggers import RisingEdge, FallingEdge
 
 import random
+import numpy
 
 STATE_A = 0
 STATE_B = 1
@@ -16,9 +17,9 @@ async def test(dut):
     clock = Clock(dut.clk, 1, units="ns")
     cocotb.start_soon(clock.start())
 
-    await RisingEdge(dut.clk)
+    dut.i.value = 1
+    dut.state.value = STATE_B
 
-    dut.i.value = 0
     dut.areset.value = 1
     await RisingEdge(dut.areset)
 
@@ -26,9 +27,11 @@ async def test(dut):
     await FallingEdge(dut.areset)
 
     state = STATE_B
+    await FallingEdge(dut.clk)
 
     for _ in range(1000):
-        areset = rand(1)
+        p = 1/10
+        areset = int(numpy.random.choice(numpy.arange(0, 2), p=[1-p, p]))
         i = rand(1)
 
         dut.i.value = i
@@ -41,10 +44,10 @@ async def test(dut):
             await FallingEdge(dut.areset)
 
             state = STATE_B
-
             assert dut.o.value == state, f"reset test failed with i={dut.i.value} areset={dut.areset.value}"
-
-        if i == 0: state = STATE_A if state == STATE_B else STATE_B
+    
 
         await FallingEdge(dut.clk)
+        if i == 0: state = STATE_A if state == STATE_B else STATE_B
+
         assert dut.o.value == state, f"test failed with i={dut.i.value} areset={dut.areset.value}"

@@ -43,7 +43,7 @@ async def test(dut):
     await FallingEdge(dut.clk)
 
     for _ in range(1000):
-        p = 0
+        p = 1/10
         reset = int(numpy.random.choice(numpy.arange(0, 2), p=[1-p, p]))
         i = rand(1)
 
